@@ -5,8 +5,6 @@ fast_finish: true
 
 matrix:
   include:
-    - python: 2.7
-    - python: 3.5
     - python: 3.6
     - python: 3.7
     - python: 3.8
@@ -15,15 +13,10 @@ matrix:
       sudo: true
 
 install:
-  - pip install Cython
-  - pip install pytest>=4.6
-  - pip install pytest-cov
-  - pip install coveralls
-  - pip install -r requirements.txt
-  - pip install .
+  - poetry install
 
 script:
-  - pytest --cov=yfinance/
+  - poetry run pytest --cov=yfinance/ -vvv
 
 after_success:
   - coveralls

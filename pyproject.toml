@@ -1,0 +1,23 @@
+[tool]
+[tool.poetry]
+name = "yfinance"
+version = "0.1.59"
+description = "Yahoo! Finance market data downloader"
+license = "Apache"
+keywords = ["pandas", "yahoo", "finance", "pandas", "datareader"]
+classifiers = ["License :: OSI Approved :: Apache Software License", "Development Status :: 5 - Production/Stable", "Operating System :: OS Independent", "Intended Audience :: Developers", "Topic :: Office/Business :: Financial", "Topic :: Office/Business :: Financial :: Investment", "Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator", "Topic :: Software Development :: Libraries", "Topic :: Software Development :: Libraries :: Python Modules", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9"]
+homepage = "https://github.com/ranaroussi/yfinance"
+authors = ["Ran Aroussi <ran@aroussi.com>"]
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = ">=3.6,<4"
+lxml = ">=4.5.1"
+multitasking = ">=0.0.7"
+numpy = ">=1.15"
+pandas = ">=0.24"
+requests = ">=2.20"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+pytest-cov = "^2.12.0"
